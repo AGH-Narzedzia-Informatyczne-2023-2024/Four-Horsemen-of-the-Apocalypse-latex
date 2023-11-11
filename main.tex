@@ -1,0 +1,43 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{graphicx} % Required for inserting images
+\graphicspath{{pictures/}} % Relative graphics path
+
+% Tables
+\usepackage[table,xcdraw,dvipsnames]{xcolor} % Required for changing the background color of a table row
+\usepackage{makecell} % Required for line breaks in cells
+\renewcommand\theadfont{\bfseries} % Bold font in thead
+\usepackage{adjustbox} % Required for resizing tables
+\usepackage{cellspace} % Required for proper cell paddings when using math formulas
+\setlength{\cellspacetoplimit}{4pt} % Cell padding
+\setlength{\cellspacebottomlimit}{4pt}
+
+\usepackage[T1]{fontenc} % Polish letters in the title
+\usepackage[utf8]{inputenc} % UTF8 encoding
+\usepackage{enumitem} % Custom labels of items in the list
+\usepackage[colorlinks]{hyperref} % Hyperlinks
+\hypersetup{ % Custom colors
+    linkcolor = NavyBlue,
+    urlcolor = Green
+}
+
+\title{Four Horsemen of the Apocalypse}
+\author{
+    Maciej Jastrzębski
+    \and
+    Jakub Halfar
+    \and
+    Mateusz Battek
+    \and
+    Adam Szlósarczyk
+}
+\date{October 2023}
+
+\begin{document}
+\maketitle
+
+\input{chapters/chapter1_Maciej_Jastrzębski}
+\input{chapters/chapter2_Adam_Szlósarczyk}
+\input{chapters/chapter3_Mateusz_Battek}
+\input{chapters/chapter4_Jakub_Halfar}
+
+\end{document}
